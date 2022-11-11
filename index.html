@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localforage 和 idb-keyval</title>
+</head>
+
+<body>
+  <script src="localforage.js"></script>
+  <script>console.log('localforage is: ', localforage);</script>
+  <script>
+    // 存储数据
+    localforage.getItem('somekey').then(function (value) {
+      // 当离线仓库中的值被载入时，此处代码运行
+      console.log(value);
+    }).catch(function (err) {
+      // 当出错时，此处代码运行
+      console.log(err);
+    });
+
+    // 回调版本：
+    localforage.getItem('somekey', function (err, value) {
+      // 当离线仓库中的值被载入时，此处代码运行
+      console.log(value);
+    });
+
+    保存数据
+  </script>
+</body>
+
+</html>
