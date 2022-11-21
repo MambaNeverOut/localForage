@@ -6,7 +6,7 @@ localStorage 是前端本地存储的一种方式，容量在 5M ~ 10M，可以�
 
 ![IndexedDB](./img/IndexedDB.jpg)
 
-查看了 MDN 文档，IndexedDB 的功能十分强大， 但直接使用太复杂。所以我们去用一下 MDN 推荐的库：localForage 和 idb-keyval 。
+查看了 MDN 文档，IndexedDB 的功能十分强大， 但直接使用太复杂。所以我们去用一下 MDN 推荐的库：localForage。
 
 ## [localForage](http://localforage.docschina.org/#localforage)
 
