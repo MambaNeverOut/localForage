@@ -404,13 +404,13 @@ localforage.dropInstance({
   name: "otherName",
   storeName: "otherStore"
 }).then(function() {
-  console.log('Dropped otherStore').
+  console.log('Dropped otherStore')
 });
 
 localforage.dropInstance({
   name: "otherName"
 }).then(function() {
-  console.log('Dropped otherName database').
+  console.log('Dropped otherName database')
 });
 ```
 ### 多个 store（存储空间）
